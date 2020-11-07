@@ -1,0 +1,25 @@
+<div class="sidebar_menu" [@onSideNavChange]="sidebarState">
+  <mat-nav-list class="menu-list">
+    <a *ngIf="!isLogged" mat-list-item routerLinkActive="active-list-item" routerLink="login" title="Login">
+      <mat-icon class="icon" [@iconAnimation]="sidebarState">input</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarState">Login</span>
+    </a>
+    <a *ngIf="isLogged" mat-list-item routerLinkActive="active-list-item" (click)="onLogOut()" title="LogOut">
+      <mat-icon class="icon" [@iconAnimation]="sidebarState">input</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarState">Cerrar Sesion</span>
+    </a>
+    <mat-divider></mat-divider>
+    <a *ngIf="!isLogged" mat-list-item routerLinkActive="active-list-item" routerLink="/registro" title="Registro">
+      <mat-icon class="icon" [@iconAnimation]="sidebarState">dashboard</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarState">Registro</span>
+    </a>
+    <a mat-list-item routerLinkActive="active-list-item" routerLink="/index" title="Inicio">
+      <mat-icon class="icon" [@iconAnimation]="sidebarState">work</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarState">Inicio</span>
+    </a>
+    <a *ngFor="let menu of menus" mat-list-item routerLinkActive="active-list-item" [routerLink]="menu.path" [title]="menu.nombre">
+      <mat-icon class="icon" [@iconAnimation]="sidebarState">{{menu.icon}}</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarState">{{menu.nombre}}</span>
+    </a>
+  </mat-nav-list>
+</div>

@@ -1,0 +1,29 @@
+<div style=" height:100vh; ">
+<div class="container" *ngIf="menu"  [style.color]="colorUsuario">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre"
+                    [(ngModel)]="menu.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="icon">Icon</label>
+                    <input type="text" class="form-control" id="icon" name="icon"
+                    [(ngModel)]="menu.icon" required>
+                </div>
+                <div class="form-group">
+                    <label for="path">Path</label>
+                    <input type="text" class="form-control" id="path" name="path"
+                    [(ngModel)]="menu.path" required>
+                </div>
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">
+                    <i class="fas fa-pencil-alt"></i> Actualizar</button>
+                <button class="btn btn-outline-primary btn-block" routerLink="/listaMenu">
+                    <i class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
