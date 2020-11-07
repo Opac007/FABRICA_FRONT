@@ -8,7 +8,7 @@ import { Producto } from '../modules/models/producto';
 })
 export class ProductoService {
 
-  productoURL = 'http://whispering-refuge-65875.herokuapp.com/producto/';
+  productoURL = 'https://whispering-refuge-65875.herokuapp.com/producto/';
 
   constructor(private httpClient: HttpClient) { }
 

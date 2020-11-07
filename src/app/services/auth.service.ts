@@ -10,7 +10,7 @@ import { JwtDTO } from '../modules/models/jwt-dto';
 })
 export class AuthService {
 
-  authURL = 'http://whispering-refuge-65875.herokuapp.com/auth/';
+  authURL = 'https://whispering-refuge-65875.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

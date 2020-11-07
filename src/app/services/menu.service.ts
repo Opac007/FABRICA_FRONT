@@ -8,7 +8,7 @@ import { Menu } from '../modules/models/menu';
 })
 export class MenuService {
 
-  menuURL = 'http://whispering-refuge-65875.herokuapp.com/menu/';
+  menuURL = 'https://whispering-refuge-65875.herokuapp.com/menu/';
 
   constructor(private httpClient: HttpClient) { }
 
