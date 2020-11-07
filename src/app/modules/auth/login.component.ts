@@ -51,6 +51,7 @@ export class LoginComponent implements OnInit {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
         setTimeout(() => {
+          this.router.navigateByUrl('/index');
           this.router.navigate(['/index']);
           window.location.reload();
           this.router.navigate(['/index']);},
