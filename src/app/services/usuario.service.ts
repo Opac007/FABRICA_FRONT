@@ -9,7 +9,7 @@ import { Usuario } from '../modules/models/usuario';
 })
 export class UsuarioService {
 
-  menuURL = 'http://localhost:8080/usuario/';
+  menuURL = 'http://whispering-refuge-65875.herokuapp.com/usuario/';
 
   constructor(private httpClient: HttpClient) { }
 
