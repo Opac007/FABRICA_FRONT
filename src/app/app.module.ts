@@ -26,6 +26,10 @@ import { ListamenuComponent } from './modules/menu/lista-menu.component';
 import { NuevomenuComponent } from './modules/menu/nuevo-menu.component';
 import { EditarmenuComponent } from './modules/menu/editar-menu.component';
 import { EditarUsuarioComponent } from './modules/usuario/editar-usuario.component';
+import { ListaRolComponent } from './modules/rol/lista-rol.component';
+import { DetalleRolComponent } from './modules/rol/detalle-rol.component';
+import { NuevoRolComponent } from './modules/rol/nuevo-rol.component';
+import { EditarRolComponent } from './modules/rol/editar-rol.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,10 @@ import { EditarUsuarioComponent } from './modules/usuario/editar-usuario.compone
     NuevomenuComponent,
     EditarmenuComponent,
     EditarUsuarioComponent,
+    ListaRolComponent,
+    DetalleRolComponent,
+    NuevoRolComponent,
+    EditarRolComponent,
   ],
   imports: [
     BrowserModule,

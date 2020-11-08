@@ -1,0 +1,19 @@
+<div style=" height:100vh; ">
+<div class="container" *ngIf="rol"  [style.color]="colorUsuario">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre de Rol</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre"
+                    [(ngModel)]="rol.rolNombre" required>
+                </div>
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">
+                    <i class="fas fa-pencil-alt"></i> Actualizar</button>
+                <button class="btn btn-outline-primary btn-block" routerLink="/listaRol">
+                    <i class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

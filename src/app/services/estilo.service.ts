@@ -8,7 +8,7 @@ import { Estilo } from '../modules/models/estilo';
 })
 export class EstiloService {
 
-  menuURL = 'https://whispering-refuge-65875.herokuapp.com/estilo/';
+  menuURL = 'http://localhost:8080/estilo/';
 
   constructor(private httpClient: HttpClient) { }
 
