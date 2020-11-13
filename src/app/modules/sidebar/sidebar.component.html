@@ -1,5 +1,5 @@
-<div class="sidebar_menu" [@onSideNavChange]="sidebarState">
-  <mat-nav-list class="menu-list">
+<div class="sidebar_menu" [@onSideNavChange]="sidebarState" [style.background]="colorUsuario">
+  <mat-nav-list class="menu-list"  >
     <a *ngIf="!isLogged" mat-list-item routerLinkActive="active-list-item" routerLink="inicio" title="inicio">
       <mat-icon class="icon" [@iconAnimation]="sidebarState">input</mat-icon>
       <span class="label" [@labelAnimation]="sidebarState">Login</span>

@@ -22,6 +22,7 @@ export class SidebarComponent implements OnInit {
   sidebarState: string;
   isLogged = false;
   nombreUsuario: string;
+  colorUsuario = '';
 
   constructor(
     private menuService: MenuService,
@@ -34,6 +35,8 @@ export class SidebarComponent implements OnInit {
     if (this.tokenService.getToken()) {
       this.isLogged = true;
       this.nombreUsuario = this.tokenService.getUserName();
+      this.colorUsuario = this.tokenService.getStyle();
+      console.log(this.colorUsuario);
       this.cargarMenus();
     } else {
       this.isLogged = false;
