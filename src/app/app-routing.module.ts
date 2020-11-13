@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] } },
   //{ path: '**', component: DashboardComponent },
   { path: 'index', component: IndexComponent  },
-  { path: 'login', component: LoginComponent },
+  { path: 'lgn', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'listaProducto', component: ListaProductoComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] } },
   { path: 'detalleProducto/:id', component: DetalleProductoComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] } },

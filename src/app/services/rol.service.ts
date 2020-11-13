@@ -8,7 +8,7 @@ import { Rol } from '../modules/models/rol';
 })
 export class RolService {
 
-  rolURL = 'http://localhost:8080/rol/';
+  rolURL = 'http://whispering-refuge-65875.herokuapp.com/rol/';
 
   constructor(private httpClient: HttpClient) { }
 
