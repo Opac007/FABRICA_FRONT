@@ -30,6 +30,10 @@ import { ListaRolComponent } from './modules/rol/lista-rol.component';
 import { DetalleRolComponent } from './modules/rol/detalle-rol.component';
 import { NuevoRolComponent } from './modules/rol/nuevo-rol.component';
 import { EditarRolComponent } from './modules/rol/editar-rol.component';
+import { ListaEstiloComponent } from './modules/estilo/lista-estilo.component';
+import { DetalleEstiloComponent } from './modules/estilo/detalle-estilo.component';
+import { NuevoEstiloComponent } from './modules/estilo/nuevo-estilo.component';
+import { EditarEstiloComponent } from './modules/estilo/editar-estilo.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,10 @@ import { EditarRolComponent } from './modules/rol/editar-rol.component';
     DetalleRolComponent,
     NuevoRolComponent,
     EditarRolComponent,
+    ListaEstiloComponent,
+    DetalleEstiloComponent,
+    NuevoEstiloComponent,
+    EditarEstiloComponent,
   ],
   imports: [
     BrowserModule,

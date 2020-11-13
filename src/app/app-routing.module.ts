@@ -17,6 +17,10 @@ import { ListaRolComponent } from './modules/rol/lista-rol.component';
 import { DetalleRolComponent } from './modules/rol/detalle-rol.component';
 import { NuevoRolComponent } from './modules/rol/nuevo-rol.component';
 import { EditarRolComponent } from './modules/rol/editar-rol.component';
+import { ListaEstiloComponent } from './modules/estilo/lista-estilo.component';
+import { DetalleEstiloComponent } from './modules/estilo/detalle-estilo.component';
+import { NuevoEstiloComponent } from './modules/estilo/nuevo-estilo.component';
+import { EditarEstiloComponent } from './modules/estilo/editar-estilo.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] } },
@@ -36,6 +40,10 @@ const routes: Routes = [
   { path: 'detalleRol/:id', component: DetalleRolComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] } },
   { path: 'nuevoRol', component: NuevoRolComponent, canActivate: [guard], data: { expectedRol: ['admin'] } },
   { path: 'editarRol/:id', component: EditarRolComponent, canActivate: [guard], data: { expectedRol: ['admin'] } },
+  { path: 'listaEstilo', component: ListaEstiloComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] } },
+  { path: 'detalleEstilo/:id', component: DetalleEstiloComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] } },
+  { path: 'nuevoEstilo', component: NuevoEstiloComponent, canActivate: [guard], data: { expectedRol: ['admin'] } },
+  { path: 'editarEstilo/:id', component: EditarEstiloComponent, canActivate: [guard], data: { expectedRol: ['admin'] } },
   { path: '**', redirectTo: 'index', pathMatch: 'full' }
 ];
 
